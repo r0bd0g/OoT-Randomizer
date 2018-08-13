@@ -312,7 +312,7 @@ class CollectionState(object):
     def has_bombchus(self):
         return (self.world.bombchus_in_logic and \
                     (any(pritem.startswith('Bombchus') for pritem in self.prog_items) \
-                    or (self.has('Progressive Wallet') and self.can_reach('Haunted Wasteland')))) \
+                    or (self.has('Progressive Wallet') and self.can_reach('Haunted Wasteland Middle Adult')))) \
             or (not self.world.bombchus_in_logic and self.has('Bomb Bag'))
 
     def has_explosives(self):
@@ -331,13 +331,13 @@ class CollectionState(object):
         return ((self.has('Magic Meter') and self.has('Lens of Truth')) or self.world.logic_lens != 'all')
 
     def has_GoronTunic(self):
-        return (self.has('Goron Tunic') or (self.has('Progressive Wallet') and (self.has_explosives() or self.has('Progressive Strength Upgrade') or self.has('Bow'))))
+        return (self.has('Goron Tunic') or (self.has('Progressive Wallet') and self.can_reach('Goron Shop Adult')))
 
     def has_ZoraTunic(self):
-        return (self.has('Zora Tunic') or (self.has('Progressive Wallet', 2) and self.has_bottle() and self.can_play('Zeldas Lullaby')))
+        return (self.has('Zora Tunic') or (self.has('Progressive Wallet', 2) and self.can_reach('Zora Shop Adult')))
 
     def can_finish_adult_trades(self):
-        zora_thawed = self.has_bottle() and self.has('Zeldas Lullaby') and (self.can_reach('Ice Cavern') or self.can_reach('Ganons Castle Water Trial') or self.has('Progressive Wallet', 2))
+        zora_thawed = self.has_bottle() and self.has('Zeldas Lullaby') and (self.can_reach('Ice Cavern Adult') or self.can_reach('Ganons Castle Water Trial') or self.has('Progressive Wallet', 2))
         carpenter_access = self.has('Epona') or self.has('Progressive Hookshot', 2)
         return (self.has('Claim Check') or ((self.has('Eyedrops') or self.has('Eyeball Frog') or self.has('Prescription') or self.has('Broken Sword')) and zora_thawed) or ((self.has('Poachers Saw') or self.has('Odd Mushroom') or self.has('Cojiro') or self.has('Pocket Cucco') or self.has('Pocket Egg')) and zora_thawed and carpenter_access))
 
