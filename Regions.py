@@ -5,7 +5,7 @@ from BaseClasses import Region, Location, Entrance, RegionType
 def create_regions(world):
 
     world.regions = [
-	create_interior_region('Initial Spawn', ['Links Pocket'], ['Links House Spawn', 'Minuet of Forest Child', 'Bolero of Fire Child', 'Serenade of Water Child', 'Nocturne of Shadow Child', 'Requiem of Spirit Child', 'Prelude of Light Child']),
+        create_interior_region('Initial Spawn', ['Links Pocket'], ['Links House Spawn', 'Minuet of Forest Child', 'Bolero of Fire Child', 'Serenade of Water Child', 'Nocturne of Shadow Child', 'Requiem of Spirit Child', 'Prelude of Light Child']),
 #       create_interior_region('Initial Spawn Adult', None, ['Temple of Time Spawn']), # Unused.
         create_interior_region('Links House Child', None, ['Links House Exit Child']),
         create_interior_region('Links House Adult', None, ['Links House Exit Adult']),
@@ -13,7 +13,7 @@ def create_regions(world):
         create_ow_region('Kokiri Forest Adult', ['GS Kokiri House of Twins'], ['Links House Adult', 'Mido House Adult', 'Saria House Adult', 'House of Twins Adult', 'Know It All House Adult', 'Kokiri Shop Adult', 'Kokiri Forest Storms Grotto Adult', 'Lost Woods Ocarina Adult', 'Lost Woods Adult']),
         create_interior_region('Mido House Child', None, ['Mido House Exit Child', 'Mido House Child to Shared']),
         create_interior_region('Mido House Adult', None, ['Mido House Exit Adult', 'Mido House Adult to Shared']),
-	create_interior_region('Mido House Shared', ['Mido Chest Top Left', 'Mido Chest Top Right', 'Mido Chest Bottom Left', 'Mido Chest Bottom Right']),
+        create_interior_region('Mido House Shared', ['Mido Chest Top Left', 'Mido Chest Top Right', 'Mido Chest Bottom Left', 'Mido Chest Bottom Right']),
         create_interior_region('Saria House Child', None, ['Saria House Exit Child']),
         create_interior_region('Saria House Adult', None, ['Saria House Exit Adult']),
         create_interior_region('House of Twins Child', None, ['House of Twins Exit Child']),
@@ -25,9 +25,9 @@ def create_regions(world):
         create_grotto_region('Kokiri Forest Storms Grotto Child', None, ['Kokiri Forest Storms Grotto Exit Child', 'Kokiri Forest Storms Grotto Child to Shared']),
         create_grotto_region('Kokiri Forest Storms Grotto Adult', None, ['Kokiri Forest Storms Grotto Exit Adult', 'Kokiri Forest Storms Grotto Adult to Shared']),
         create_grotto_region('Kokiri Forest Storms Grotto Shared', ['Kokiri Forest Storms Grotto Chest']),
-	create_ow_region('Lost Woods Ocarina Child', None, ['Lost Woods Ocarina Child to Shared', 'Lost Woods Bridge Child']),
-	create_ow_region('Lost Woods Ocarina Adult', None, ['Lost Woods Ocarina Adult to Shared', 'Lost Woods Bridge Adult']),
-	create_ow_region('Lost Woods Ocarina Shared', ['Gift from Saria']),
+        create_ow_region('Lost Woods Ocarina Child', None, ['Lost Woods Ocarina Child to Shared', 'Lost Woods Bridge Child']),
+        create_ow_region('Lost Woods Ocarina Adult', None, ['Lost Woods Ocarina Adult to Shared', 'Lost Woods Bridge Adult']),
+        create_ow_region('Lost Woods Ocarina Shared', ['Gift from Saria']),
         create_ow_region('Lost Woods Bridge Child', None, ['Kokiri Forest Entrance Child', 'Forest Exit Child']),
         create_ow_region('Lost Woods Bridge Adult', None, ['Kokiri Forest Entrance Adult', 'Forest Exit Adult', 'Lost Woods Ladder Adult']),
         create_ow_region('Lost Woods Child', ['Skull Kid', 'Ocarina Memory Game', 'Target in Woods', 'Deku Salesman Woods', 'GS Lost Woods Bean Patch Near Bridge', 'GS Lost Woods Bean Patch Near Stage'], ['Lost Woods to Kokiri Forest Child', 'Lost Woods Generic Grotto Child', 'Deku Theater Grotto Child', 'Lost Woods Sales Grotto Child', 'Lost Woods to Goron City Child', 'Lost Woods to Zora River Child', 'Sacred Forest Meadow Child']),
