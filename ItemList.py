@@ -150,8 +150,8 @@ skulltulla_locations = ([
     'GS Mountain Trail Above Dodongo\'s Cavern',
     'GS Goron City Boulder Maze',
     'GS Goron City Center Platform',
-    'GS Death Mounter Crater Crate',
-    'GS Death Mounter Bean Patch',
+    'GS Death Mountain Crater Crate',
+    'GS Mountain Crater Bean Patch',
     'GS Dodongo\'s Cavern East Side Room',
     'GS Dodongo\'s Cavern Vines Above Stairs',
     'GS Dodongo\'s Cavern Back Room',
@@ -215,7 +215,7 @@ skulltulla_locations = ([
     'GS Spirit Temple Hall to West Iron Knuckle',
     'GS Spirit Temple Boulder Room',
     'GS Spirit Temple Lobby'])
-    
+
 tradeitems = [
     'Pocket Egg',
     'Pocket Cucco', 
